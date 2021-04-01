@@ -4,6 +4,7 @@ module.exports = {
 	env: {
 		browser: true,
 		es2020: true,
+		node: true,
 	},
 	extends: [
 		'eslint:recommended',
@@ -15,7 +16,7 @@ module.exports = {
 		'plugin:import/warnings',
 		'plugin:prettier/recommended',
 		'prettier/@typescript-eslint',
-		'prettier/react',
+		'prettier',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -25,8 +26,11 @@ module.exports = {
 		ecmaVersion: 2020,
 		sourceType: 'module',
 	},
-	plugins: ['@typescript-eslint', 'react', 'import'],
+	plugins: ['@typescript-eslint', 'react', 'import', 'prettier'],
 	settings: {
+		React: {
+			version: 'detect',
+		},
 		'import/resolver': {
 			node: {
 				extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -46,6 +50,8 @@ module.exports = {
 				},
 			},
 		],
+		'@typescript-eslint/explicit-module-boundary-types': 'off',
+		'@typescript-eslint/ba-ts-comment': 'off',
 		'react/prop-types': ['off'],
 		'react/react-in-jsx-scope': 'off',
 		'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
