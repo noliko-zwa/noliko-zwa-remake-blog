@@ -5,6 +5,8 @@ import * as path from 'path';
 import matter from 'gray-matter';
 import { MDXProvider } from '@mdx-js/react';
 import MDX from '@mdx-js/runtime';
+import styled from 'styled-components';
+
 // import Head from 'next/head';
 
 export interface PostProps {
@@ -17,13 +19,23 @@ export interface MatterContents {
 	data: object;
 }
 
+const BasicStyle = styled.div`
+	font-size: 40px;
+	font-weight: bold;
+	h1 {
+		color: pink;
+	}
+`;
+
 const Post: React.FC<PostProps> = (props) => {
 	return (
 		<>
 			{/* <Head>SEO Information: {JSON.stringify(props.metaInformation)}</Head> */}
-			<MDXProvider>
-				<MDX> {props.mdx} </MDX>
-			</MDXProvider>
+			<BasicStyle>
+				<MDXProvider components={{}}>
+					<MDX> {props.mdx} </MDX>
+				</MDXProvider>
+			</BasicStyle>
 		</>
 	);
 };

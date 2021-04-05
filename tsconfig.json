@@ -1,10 +1,11 @@
 {
 	"compilerOptions": {
 		"target": "ES6",
-		"lib": ["dom", "dom.iterable", "esnext","ES2019"],
+		"lib": ["dom", "dom.iterable", "esnext", "ES2019"],
 		"baseUrl": ".",
 		"paths": {
-			"src/*": ["src/*"]
+			"src/*": ["src/*"],
+			"*": ["node_modules/*", "src/typings/*"]
 		},
 		"allowJs": true,
 		"skipLibCheck": true,
@@ -18,6 +19,6 @@
 		"isolatedModules": true,
 		"jsx": "preserve"
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["src","next-env.d.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"]
 }
