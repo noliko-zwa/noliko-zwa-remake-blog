@@ -3,5 +3,5 @@ type Header = {
 };
 
 export default function Header() {
-  return <h1>nolico taki</h1>
+  return <h1>nolico taki test</h1>
 };
