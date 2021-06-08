@@ -1,0 +1,35 @@
+{
+    "title": "Nolico Taki",
+    "menu": [
+        "works",
+        "CV",
+        "contact"
+    ],
+    "works": [
+        {
+            "title": "Breakfast 9:00 am",
+            "imgUrl": "888-555-1212",
+            "text": "1 <p></p> Gratefulness of stairs doubling as drawers Collecting seven same pair of clothesClear one’s mind of distracting thoughts",
+            "material": "stone,lamp,chain",
+            "size": "stone: 50x63x10 (cm)",
+            "year": 2012
+        },
+        {
+            "title": "Sleeping Prophets",
+            "imgUrl": "888-555-1212",
+            "text": "",
+            "material": "wood, stainless steel, ceramics",
+            "size": "Table : 150 x 35 x 130 (cm)",
+            "year": 2014
+        },
+        {
+            "title": "Berlin “38 _”39 _”51",
+            "imgUrl": "888-555-1212",
+            "text": "",
+            "material": "aluminum, brass, plastic, carpet",
+            "size": "130x26x670 (cm)",
+            "year": 2014
+        }
+    ],
+    "contact": "hallo.nolico.taki(at)gmail.com"
+}

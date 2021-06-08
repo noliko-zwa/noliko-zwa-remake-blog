@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useContext } from "react";
+import { AppContext } from "../contexts/AppContext";
 
 function NavBar() {
-  return (
-    <div>
-      menu
-    </div>
-  )
+  const data = useContext(AppContext);
+  return <div>menu nav bar</div>;
 }
 
-export default NavBar
+export default NavBar;
